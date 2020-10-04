@@ -131,12 +131,12 @@ corresponde a formato brasileiro de data "dd/mm/aaaa".
 **senha** - Verifica se a string que foi inserida como entrada corresponde
 às seguintes regras:
 
-[x] - Precisa ter entre 10 e 20 caracteres
-[x] - Precisa ter pelo menos uma letra maiúscula
-[x] - Preciso ter pelo menos um número
-[x] - Precisa ter pelo menos um asterisco
-[x] - Não pode conter qualquer outro caracter especial que não
-seja o asterisco
+- [x] - Precisa ter entre 10 e 20 caracteres
+- [x] - Precisa ter pelo menos uma letra maiúscula
+- [x] - Preciso ter pelo menos um número
+- [x] - Precisa ter pelo menos um asterisco
+- [x] - Não pode conter qualquer outro caracter especial que não
+    seja o asterisco
 
 ## ARQUIVO COM OS TESTES DO JEST (test.js)
 
