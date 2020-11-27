@@ -4,7 +4,7 @@
   "description": "Aplicacao exemplo para a ferramenta JEST",
   "main": "index.js",
   "scripts": {
-    "test": "start",
+    "test": "jest",
     "nodemon": "npx nodemon index.js"
   },
   "author": "Guilherme e Jadson",

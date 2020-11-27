@@ -68,13 +68,16 @@ module.exports = {
    * @returns bool
    */
   dataBrl(sData) {
+    if (typeof sData !== 'string') return false;
+
     const regex = /[^0-9/ ]/gi;
+
+    if (sData.length <= 0) return false;
+
     let data = sData.replace('-', '');
     data = data.replace(regex, '');
 
-    if (data.length !== 10) {
-      return false;
-    }
+    if (data.length !== 10) return false;
 
     const dataGroup = data.split('/');
     const dia = Number(dataGroup[0]);
@@ -102,5 +105,8 @@ module.exports = {
     if (senha.search(/[*]/) === -1) return false;
 
     return true;
+  },
+  funcaoTerceira(sValor, sCallBack) {
+    return sValor + sCallBack(sValor);
   },
 };
